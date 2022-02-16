@@ -1,10 +1,10 @@
 node('master') 
 {
-    stage('Continuous Download master') 
+    stage('Continuous Download Loan') 
 	{
     git 'https://github.com/gamedoper/maven.git'
 	}
-    stage('Continuous Build master') 
+    stage('Continuous Build Loan') 
 	{
     sh label: '', script: 'mvn package'
 	}
